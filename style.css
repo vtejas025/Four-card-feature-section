@@ -1,4 +1,5 @@
 @import url('https://fonts.google.com/specimen/Poppins');
+@media screen and (max-width:1440px) and (min-width:376px) {
 body{
     background-color: hsl(0, 0%, 98%);
     width:100%;
@@ -7,8 +8,34 @@ body{
     font-family: "Poppins",sans-serif;
     font-size: 15px;
 }
+footer{
+    bottom:0px;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+  }
+h1:nth-of-type(1){
+    margin-bottom: 0px;
+    margin-top: 20px ;
+    font-weight: 100;
+    color: hsl(0, 0%, 56%);
+}
+h1:nth-of-type(2){
+    margin-top: 6px;
+    font-weight: 600;
+    color: hsla(234, 12%, 34%,1.5);
+}
 .center{
     text-align: center;
+}
+.k{
+    line-height: 22px;
+    color:  hsl(0, 0%, 61%);
+    width:40%;
+    padding: auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 .body{
     width:970px;
@@ -40,20 +67,109 @@ body{
     color:hsla(234, 12%, 34%,1.5);
     font-size: 16px;
 }
-.common:nth-of-type(2n+1){
-    margin-top: 120px;
+.common:nth-child(1){
+    top:120px;
+    position: relative;
 }
 .common:nth-of-type(2){
     border-top: 5px solid hsl(0, 78%, 62%);
 }
 .common:nth-of-type(3){
-    border-top: 5px solid hsl(180, 62%, 55%);
+    border-top: 5px solid hsl(34, 97%, 64%);
+    left:-335px;
+    top:254px;
+    position: relative;
 }
 .common:nth-of-type(4){
-    margin-left: 335px;
-    border-top: 5px solid hsl(34, 97%, 64%) ;
+    margin-left: 670px;
+    border-top: 5px solid hsl(180, 62%, 55%) ;
+    bottom: 120px;
+    position: relative;
 }
 .common img{
     margin-left: 175px;
     margin-top: 20px;
 }
+}
+@media screen and (max-width:375px) {
+    body{
+        background-color: hsl(0, 0%, 98%);
+        width:100%;
+        height: 100%;
+        margin: 70px 0 0;
+        font-family: "Poppins",sans-serif;
+        font-size: 16px;
+    }
+    footer{
+        bottom:0px;
+        margin: auto;
+        width: 100%;
+
+      }
+    h1:nth-of-type(1){
+        margin-bottom: 0px;
+        margin-top: 20px ;
+        font-weight: 100;
+        color: hsl(0, 0%, 56%);
+        font-size: 26px;
+    }
+    h1:nth-of-type(2){
+        margin-top: 6px;
+        font-weight: 600;
+        color: hsla(234, 12%, 34%,1.5);
+        font-size: 26px;
+    }
+    .center{
+        text-align: center;
+    }
+    .k{
+        width: 300px;
+        line-height: 22px;
+        color:  hsl(0, 0%, 61%);
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    .body{
+        margin-top: 50px;
+        width:330px;
+        height: 970px;
+        margin: auto;
+        display: grid;
+        row-gap: 30px;
+        grid-template-columns: 330px;
+        margin-bottom: 5px;
+    }
+    .common{
+        width:280px;
+        height:205px;
+        color: hsl(0, 0%, 61%);
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 30px;
+        border-radius: 5px;
+        border-top: 5px solid hsl(212, 86%, 64%) ;
+        font-size: 14px;
+        line-height: 22px;
+        box-shadow: 20px 20px 20px rgba(219, 219, 219,0.3);
+        padding-top: 10px;
+    }
+    .common h2{
+        color:hsla(234, 12%, 34%,1.5);
+        font-size: 16px;
+    }
+    .common:nth-of-type(2){
+        border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    .common:nth-of-type(4){
+        border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    .common:nth-of-type(3){
+        border-top: 5px solid hsl(34, 97%, 64%) ;
+    }
+    .common img{
+        margin-left: 215px;
+        margin-top: 20px;
+    }
+    }
