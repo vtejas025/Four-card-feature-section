@@ -83,7 +83,7 @@ h1:nth-of-type(2){
 .common:nth-of-type(4){
     margin-left: 670px;
     border-top: 5px solid hsl(180, 62%, 55%) ;
-    bottom: 120px;
+    bottom: 130px;
     position: relative;
 }
 .common img{
